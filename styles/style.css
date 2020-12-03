@@ -120,6 +120,8 @@
   
   top: 6px;
 }
+
+
  
 @media screen and (min-width: 1400px){
     .nav-toggle-label {
@@ -255,25 +257,32 @@
 }
 
 .cards{
-  margin: 100px 70px;
+  margin: 100px auto;
   background: var(--background);
+  width: 80%;
   display: flex;
-  flex-direction: row;
+}
+
+.cards-reverse{
+  margin: 100px auto;
+  background: var(--background);
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card-image {
+  width: 50%;
 }
 
 .card-image1 {
   background-image: url("../images/about_us.jpg");
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .card-image2 {
   background-image: url("../images/get_involed_programs.jpg");
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -281,27 +290,17 @@
 
 .card-image3 {
   background-image: url("../images/donate_contact.jpg");
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
-.about-content {
+.card-content {
+  width: 50%;
   text-align: center;
   padding: 20px 30px;
 }
 
-.get-involved-content {
-  text-align: center;
-  padding: 20px 30px;
-}
-
-.donate-content {
-  text-align: center;
-  padding: 20px 30px;
-}
 
 
 /* Button */
@@ -359,4 +358,34 @@ footer a:active {
 .fa-twitter:hover,
 .fa-instagram:hover {
 	color: #4392E0;
+}
+
+@media screen and (max-width: 600px) {
+
+  .cards-section{
+    display: block;
+  }
+
+.cards{
+  margin: 100px auto;
+  background: var(--background);
+  width: 80%;
+  display: block;
+}
+
+.cards-reverse{
+  margin: 100px auto;
+  background: var(--background);
+  width: 80%;
+  display: block;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+}
+
+.card-content {
+  width: 100%;
+}
 }
